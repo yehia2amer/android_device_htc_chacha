@@ -31,10 +31,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml
 
-### Mount vold
-PRODUCT_COPY_FILES += \
-    device/htc/chacha/vold.fstab:system/etc/vold.fstab
-
 ### Audio policy
 PRODUCT_COPY_FILES += \
     device/htc/chacha/libaudio/audio_policy.conf:system/etc/audio_policy.conf
@@ -47,13 +43,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm7x27 \
     lights.chacha
-
-### System properties
-
-# Jenkins info
-ifdef BUILD_TAG
-    PRODUCT_PROPERTY_OVERRIDES += ro.jenkins.BUILD_TAG=$(BUILD_TAG)
-endif
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \

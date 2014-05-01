@@ -14,17 +14,8 @@
 # limitations under the License.
 #
 
-## (1) First, the most specific values, i.e. the aspects that are specific to GSM
-
-$(call inherit-product, build/target/product/full_base_telephony.mk)
-$(call inherit-product, build/target/product/languages_full.mk)
-
-$(call inherit-product, device/common/gps/gps_eu_supl.mk)
-
 $(call inherit-product, device/htc/msm7x27-common/msm7x27.mk)
 $(call inherit-product, device/htc/chacha/chacha-common.mk)
-
-$(call inherit-product, device/htc/chacha/goo.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/chacha/overlay
 
@@ -71,7 +62,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/htc/chacha/ueventd.chacha.rc:root/ueventd.chacha.rc \
-    device/htc/chacha/init.chacha.rc:root/init.chacha.rc
+    device/htc/chacha/init.chacha.rc:root/init.chacha.rc \
+    device/htc/chacha/fstab.chacha:root/fstab.chacha
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.htc.camerahack=msm7k
@@ -94,8 +86,8 @@ PRODUCT_PACKAGES += \
     lights_chacha \
     gps.chacha
 
-# Odex build
-DISABLE_DEXPREOPT := false
+# Don't odex build
+#DISABLE_DEXPREOPT := false
 
 # kernel
 TARGET_PREBUILT_KERNEL := device/htc/chacha/kernel/zImage
@@ -107,6 +99,3 @@ PRODUCT_COPY_FILES += \
     device/htc/chacha/firmware/BCM4329B1_002.002.023.0831.0841.hcd:system/etc/firmware/bcm4329.hcd \
     device/htc/chacha/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
     device/htc/chacha/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
-
-PRODUCT_NAME := generic_chacha
-PRODUCT_DEVICE := chacha

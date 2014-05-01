@@ -32,9 +32,12 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := chacha
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
 
 ### Kernel related stuff
-BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
+BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null androidboot.hardware=chacha
 BOARD_KERNEL_BASE := 0x12c00000
 BOARD_KERNEL_PAGESIZE := 2048
+
+### Recovery
+TARGET_RECOVERY_FSTAB := device/htc/chacha/fstab.chacha
 
 ### Partitions
 # cat /proc/mtd (chacha)
@@ -53,20 +56,12 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x10400000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x09600000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-
-### Recovery
-
-#BOARD_USES_RECOVERY_CHARGEMODE := true
-BOARD_CUSTOM_GRAPHICS := ../../../device/htc/chacha/recovery/graphics.c
-BOARD_USES_MMCUTILS := false
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_HAS_NO_MISC_PARTITION := true
-
 # Custom squisher for now
 TARGET_CUSTOM_RELEASETOOL := device/htc/chacha/releasetools/squisher
 
-# Odex build
-WITH_DEXPREOPT := true
+# Don't odex build
+#WITH_DEXPREOPT := true
+
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/chacha/bluetooth/include
 
