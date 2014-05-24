@@ -15,7 +15,6 @@
 #
 
 $(call inherit-product, device/htc/msm7x27-common/msm7x27.mk)
-$(call inherit-product, device/htc/chacha/chacha-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/chacha/overlay
 
@@ -56,10 +55,6 @@ PRODUCT_COPY_FILES += \
     device/htc/chacha/key/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/chacha/key/cy8c-touchscreen.kl:system/usr/keylayout/cy8c-touchscreen.kl
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
-
 PRODUCT_COPY_FILES += \
     device/htc/chacha/ueventd.chacha.rc:root/ueventd.chacha.rc \
     device/htc/chacha/init.chacha.rc:root/init.chacha.rc \
@@ -78,7 +73,6 @@ $(call inherit-product-if-exists, vendor/htc/chacha/chacha-vendor.mk)
 
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
-    net.bt.name=Android \
     ro.telephony.ril.v3=signalstrength,skipbrokendatacall
 
 # Add device specific modules
@@ -90,7 +84,7 @@ PRODUCT_PACKAGES += \
 #DISABLE_DEXPREOPT := false
 
 # kernel
-TARGET_PREBUILT_KERNEL := device/htc/chacha/kernel/zImage
+#TARGET_PREBUILT_KERNEL := device/htc/chacha/kernel/zImage
 PRODUCT_COPY_FILES += \
     device/htc/chacha/kernel/bcm4329.ko:system/lib/modules/bcm4329.ko \
 
@@ -99,3 +93,27 @@ PRODUCT_COPY_FILES += \
     device/htc/chacha/firmware/BCM4329B1_002.002.023.0831.0841.hcd:system/etc/firmware/bcm4329.hcd \
     device/htc/chacha/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
     device/htc/chacha/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
+	
+### Touchscreen
+PRODUCT_COPY_FILES += \
+    device/htc/chacha/idc/cy8c-touchscreen.idc:system/usr/idc/cy8c-touchscreen.idc
+
+### Prebuilt modules or firmware
+PRODUCT_COPY_FILES += \
+    device/htc/chacha/firmware/BCM4329B1_002.002.023.0831.0841.hcd:system/etc/firmware/bcm4329.hcd \
+    device/htc/chacha/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
+    device/htc/chacha/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
+
+### Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+### Add additional packages
+PRODUCT_PACKAGES += \
+    Torch
+
+### Sensors (Compass, G-Sensor, Proximity, ...)
+PRODUCT_PACKAGES += \
+    sensors.msm7x27 \
+    lights.chacha
