@@ -112,8 +112,3 @@ PRODUCT_COPY_FILES += \
 ### Add additional packages
 PRODUCT_PACKAGES += \
     Torch
-
-### Sensors (Compass, G-Sensor, Proximity, ...)
-PRODUCT_PACKAGES += \
-    sensors.msm7x27 \
-    lights.chacha
