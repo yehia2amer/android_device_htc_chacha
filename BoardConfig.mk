@@ -32,6 +32,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := chacha
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
 
 ### Kernel related stuff
+TARGET_KERNEL_CONFIG := cyanogen_msm7227_defconfig
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null androidboot.hardware=chacha
 BOARD_KERNEL_BASE := 0x12c00000
 BOARD_KERNEL_PAGESIZE := 2048
