@@ -38,8 +38,8 @@ on init
     setprop ro.EMPTY_APP_MEM 8192
 
     chown system system /sys/module/serial/parameters/modem_enabled
-	chown system system /dev/ttyHSUSB0
-	chown system system /dev/smd9
+    chown system system /dev/ttyHSUSB0
+    chown system system /dev/smd9
     chown radio radio /sys/module/msm_flashlight/parameters/phone_status
     # chown system system /sys/class/leds/wimax/brightness
 
@@ -77,12 +77,12 @@ on early-fs
     chown system system /sys/class/leds/button-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/auto
-	chown system system /sys/class/leds/sharekey/brightness
-	chown system system /sys/class/leds/keyboard-backlight/brightness
+    chown system system /sys/class/leds/sharekey/brightness
+    chown system system /sys/class/leds/keyboard-backlight/brightness
 
     # flashlight
-	chown system camera /sys/class/leds/flashlight/brightness
-	chmod 0660 /sys/class/leds/flashlight/brightness
+    chown system camera /sys/class/leds/flashlight/brightness
+    chmod 0660 /sys/class/leds/flashlight/brightness
     chown system camera /sys/devices/platform/flashlight.0/leds/flashlight/brightness
     chmod 0660 /sys/devices/platform/flashlight.0/leds/flashlight/brightness
 
