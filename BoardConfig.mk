@@ -57,9 +57,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x10400000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x09600000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Custom squisher for now
-TARGET_CUSTOM_RELEASETOOL := device/htc/chacha/releasetools/squisher
-
 # Don't odex build
 #WITH_DEXPREOPT := true
 
