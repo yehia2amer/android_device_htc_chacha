@@ -1,5 +1,5 @@
 # Call our device's AOSP device config.
-$(call inherit-product, device/htc/marvel/full_chacha.mk)
+$(call inherit-product, device/htc/chacha/full_chacha.mk)
 
 # Inherit common CM stuff
 $(call inherit-product, vendor/cm/config/gsm.mk)
