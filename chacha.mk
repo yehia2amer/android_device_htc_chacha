@@ -75,9 +75,8 @@ $(call inherit-product-if-exists, vendor/htc/chacha/chacha-vendor.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=signalstrength,skipbrokendatacall
 
-# Add device specific modules
+# GPS
 PRODUCT_PACKAGES += \
-    lights_chacha \
     gps.chacha
 
 # Don't odex build
