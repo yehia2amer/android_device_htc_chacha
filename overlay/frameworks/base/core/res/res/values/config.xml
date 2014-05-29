@@ -99,6 +99,5 @@
         <item>0</item>
     </integer-array>
 
-    <bool name="config_symKeyShowsImePicker">false</bool>
     <string name="symbol_picker_sym">%\u00A5\u2022\u00AE\u00A9\u00B1[]{}\u003C>`^\\|</string>
 </resources>
