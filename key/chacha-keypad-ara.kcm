@@ -22,253 +22,253 @@
 type ALPHA
 
 key A {
-    label:                              'A'
+    label:                              '0634'
     number:                             none
-    base:                               'a'
-    shift, capslock:                    'A'
+    base:                               '0634'
+    shift, capslock:                    'FC62'
     alt:                                ')'
     shift+alt, capslock+alt:            ')'
 }
 
 key B {
-    label:                              'B'
+    label:                              '0648'
     number:                             none
-    base:                               'b'
-    shift, capslock:                    'B'
+    base:                               '0648'
+    shift, capslock:                    '0624'
     alt:                                '\''
     shift+alt, capslock+alt:            '\''
 }
 
 key C {
-    label:                              'C'
+    label:                              '0631'
     number:                             '9'
-    base:                               'c'
-    shift, capslock:                    'C'
+    base:                               '0631'
+    shift, capslock:                    none
     alt:                                '9'
     shift+alt, capslock+alt:            '9'
 }
 
 key D {
-    label:                              'D'
+    label:                              '064A'
     number:                             '5'
-    base:                               'd'
-    shift, capslock:                    'D'
+    base:                               '064A'
+    shift, capslock:                    '0649'
     alt:                                '5'
     shift+alt, capslock+alt:            '5'
 }
 
 key E {
-    label:                              'E'
+    label:                              '0642'
     number:                             '2'
-    base:                               'e'
-    shift, capslock:                    'E'
+    base:                               '0642'
+    shift, capslock:                    '064F'
     alt:                                '2'
     shift+alt, capslock+alt:            '2'
 }
 
 key F {
-    label:                              'F'
+    label:                              '0628'
     number:                             '6'
-    base:                               'f'
-    shift, capslock:                    'F'
+    base:                               '0628'
+    shift, capslock:                    none
     alt:                                '6'
     shift+alt, capslock+alt:            '6'
 }
 
 key G {
-    label:                              'G'
+    label:                              '0644'
     number:                             none
-    base:                               'g'
-    shift, capslock:                    'G'
+    base:                               '0644'
+    shift, capslock:                    'FEF7'
     alt:                                '/'
     shift+alt, capslock+alt:            '/'
 }
 
 key H {
-    label:                              'H'
+    label:                              '0627'
     number:                             none
-    base:                               'h'
-    shift, capslock:                    'H'
+    base:                               '0627'
+    shift, capslock:                    '0623'
     alt:                                '_'
     shift+alt, capslock+alt:            '_'
 }
 
 key I {
-    label:                              'I'
+    label:                              '062E'
     number:                             none
-    base:                               'i'
-    shift, capslock:                    'I'
+    base:                               '062E'
+    shift, capslock:                    none
     alt:                                '%'
     shift+alt, capslock+alt:            '%'
 }
 
 key J {
-    label:                              'J'
+    label:                              '062A'
     number:                             '-'
-    base:                               'j'
-    shift, capslock:                    'J'
+    base:                               '062A'
+    shift, capslock:                    '0629'
     alt:                                '-'
     shift+alt, capslock+alt:            '-'
 }
 
 key K {
-    label:                              'K'
+    label:                              '0646'
     number:                             '+'
-    base:                               'k'
-    shift, capslock:                    'K'
+    base:                               '0646'
+    shift, capslock:                    none
     alt:                                '+'
     shift+alt, capslock+alt:            '+'
 }
 
 key L {
-    label:                              'L'
+    label:                              '0645'
     number:                             '='
-    base:                               'l'
-    shift, capslock:                    'L'
+    base:                               '0645'
+    shift, capslock:                    none
     alt:                                '='
     shift+alt, capslock+alt:            '='
 }
 
 key M {
-    label:                              'M'
+    label:                              '0638'
     number:                             none
-    base:                               'm'
-    shift, capslock:                    'M'
+    base:                               '0638'
+    shift, capslock:                    none
     alt:                                ':'
     shift+alt, capslock+alt:            ':'
 }
 
 key N {
-    label:                              'N'
+    label:                              '0632'
     number:                             none
-    base:                               'n'
-    shift, capslock:                    'N'
+    base:                               '0632'
+    shift, capslock:                    '0622'
     alt:                                '"'
     shift+alt, capslock+alt:            '"'
 }
 
 key O {
-    label:                              'O'
+    label:                              '062D'
     number:                             none
-    base:                               'o'
-    shift, capslock:                    'O'
+    base:                               '062D'
+    shift, capslock:                    none
     alt:                                '&'
     shift+alt, capslock+alt:            '&'
 }
 
 key P {
-    label:                              'P'
+    label:                              '062C'
     number:                             none
-    base:                               'p'
-    shift, capslock:                    'P'
-    alt:                                '@'
-    shift+alt, capslock+alt:            '@'
+    base:                               '062C'
+    shift, capslock:                    none
+    alt:                                '~'
+    shift+alt, capslock+alt:            '~'
 }
 
 key Q {
-    label:                              'Q'
+    label:                              '0636'
     number:                             '('
-    base:                               'q'
-    shift, capslock:                    'Q'
+    base:                               '0636'
+    shift, capslock:                    'FC60'
     alt:                                '('
     shift+alt, capslock+alt:            '('
 }
 
 key R {
-    label:                              'R'
+    label:                              '0641'
     number:                             '3'
-    base:                               'r'
-    shift, capslock:                    'R'
+    base:                               '0641'
+    shift, capslock:                    '064C'
     alt:                                '3'
     shift+alt, capslock+alt:            '3'
 }
 
 key S {
-    label:                              'S'
+    label:                              '0633'
     number:                             '4'
-    base:                               's'
-    shift, capslock:                    'S'
+    base:                               '0633'
+    shift, capslock:                    'FC5F'
     alt:                                '4'
     shift+alt, capslock+alt:            '4'
 }
 
 key T {
-    label:                              'T'
+    label:                              '063A'
     number:                             none
-    base:                               't'
-    shift, capslock:                    'T'
+    base:                               '063A'
+    shift, capslock:                    'FEF9'
     alt:                                '!'
     shift+alt, capslock+alt:            '!'
 }
 
 key U {
-    label:                              'U'
+    label:                              '0647'
     number:                             '$'
-    base:                               'u'
-    shift, capslock:                    'U'
+    base:                               '0647'
+    shift, capslock:                    none
     alt:                                '$'
     shift+alt, capslock+alt:            '$'
 }
 
 key V {
-    label:                              'V'
+    label:                              '062B'
     number:                             none
-    base:                               'v'
-    shift, capslock:                    'V'
+    base:                               '062B'
+    shift, capslock:                    'FEF5'
     alt:                                '\u20ac'
     shift+alt, capslock+alt:            '\u20ac'
 }
 
 key W {
-    label:                              'W'
+    label:                              '0635'
     number:                             '1'
-    base:                               'w'
-    shift, capslock:                    'W'
+    base:                               '0635'
+    shift, capslock:                    'FC61'
     alt:                                '1'
     shift+alt, capslock+alt:            '1'
 }
 
 key X {
-    label:                              'X'
+    label:                              '062F'
     number:                             '8'
-    base:                               'x'
-    shift, capslock:                    'X'
+    base:                               '062F'
+    shift, capslock:                    '0652'
     alt:                                '8'
     shift+alt, capslock+alt:            '8'
 }
 
 key Y {
-    label:                              'Y'
+    label:                              '0639'
     number:                             none
-    base:                               'y'
-    shift, capslock:                    'Y'
-    alt:                                '\u00a3'
-    shift+alt, capslock+alt:            '\u00a3'
+    base:                               '0639'
+    shift, capslock:                    '0625'
+    alt:                                '@'
+    shift+alt, capslock+alt:            '@'
 }
 
 key Z {
-    label:                              'Z'
+    label:                              '0630'
     number:                             '7'
-    base:                               'z'
-    shift, capslock:                    'Z'
+    base:                               '0630'
+    shift, capslock:                    '0652'
     alt:                                '7'
     shift+alt, capslock+alt:            '7'
 }
 
 key COMMA {
-    label:                              ','
+    label:                              '0621'
     number:                             '#'
-    base:                               ','
-    shift, capslock:                    ','
+    base:                               '0621'
+    shift, capslock:                    '0626'
     alt:                                '#'
     shift+alt:                          '#'
 }
 
 key PERIOD {
-    label:                              '.'
+    label:                              '0643'
     number:                             '.'
-    base:                               '.'
-    shift, capslock:                    '.'
+    base:                               '0643'
+    shift, capslock:                    'FEFB'
     alt:                                ':'
     shift+alt:                          ':'
 }
