@@ -83,11 +83,6 @@ PRODUCT_PACKAGES += \
 # Don't odex build
 #DISABLE_DEXPREOPT := false
 
-# kernel
-#TARGET_PREBUILT_KERNEL := device/htc/chacha/kernel/zImage
-PRODUCT_COPY_FILES += \
-    device/htc/chacha/kernel/bcm4329.ko:system/lib/modules/bcm4329.ko \
-
 # Prebuilt modules or firmware
 PRODUCT_COPY_FILES += \
     device/htc/chacha/firmware/BCM4329B1_002.002.023.0831.0841.hcd:system/etc/firmware/bcm4329.hcd \
