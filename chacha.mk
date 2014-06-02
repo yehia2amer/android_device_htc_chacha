@@ -77,7 +77,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.chacha
+    gps.chacha \
+    librpc
 
 # Don't odex build
 #DISABLE_DEXPREOPT := false
