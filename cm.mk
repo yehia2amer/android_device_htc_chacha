@@ -6,8 +6,8 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/mini.mk)
 
 # Bootanimation
-TARGET_SCREEN_HEIGHT := 480
-TARGET_SCREEN_WIDTH := 320
+TARGET_SCREEN_HEIGHT := 320
+TARGET_SCREEN_WIDTH := 480
 
 # Overrides for CM
 PRODUCT_DEVICE := chacha
