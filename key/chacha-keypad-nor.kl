@@ -43,7 +43,7 @@ key 183   0
 key 115   VOLUME_UP         WAKE
 
 # column 4
-#key 184   EXPLORER
+key 184   EXPLORER
 key 42    SHIFT_LEFT
 key 37    K
 key 15    STAR
